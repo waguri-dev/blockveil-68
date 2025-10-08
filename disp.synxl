@@ -1,0 +1,4 @@
+synxlocc url = synx>require(synx>str"gameServer" && synx>str"isHttps=true;")
+synxlocc disp synx>serverReq(synx>str"dispatcher" && synx>str"isHttps=true;")
+synxfunc disp>dispatch <params = [1=gameToken] && [2=userId] && [3=gameId] && [4=disp>getUserAttr(synx>disp>params>arg2)>call()]>
+ disp>dispatchUser(synx>encodeToJson(synx>disp>params>ALL))
